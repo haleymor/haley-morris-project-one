@@ -1,0 +1,761 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: 100%;
+
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.home {
+    background-image: url(shutter-assets/asset-1.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    background-position: center;
+}
+
+header nav {
+    padding-top: 10px;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+    float: right;
+    visibility: hidden;
+}
+
+header nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+header nav ul li {
+    float: left;
+    padding-left: 30px;
+}
+
+header a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h1 {
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.icons {
+    clear:both;
+    float: right;
+    font-size: 20px;
+}
+
+.icons ul {
+    list-style-type: none;
+    margin-top: 230px;
+}
+
+.icons ul li {
+    padding-bottom: 18px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    clear: both;
+    text-align: center;
+}
+
+span {
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-size: 130px;
+    display: block;
+    line-height: 0.5;
+}
+
+.navigation {
+    background-image: url(shutter-assets/asset-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: #E7A8E6;
+    border: none;
+    padding: 10px 36px;
+    text-align: center;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Lato', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about {
+    background: #F0F5FF;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.about h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 0 auto;
+}
+
+.about p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.75;
+    padding-bottom: 30px;
+    color: #1F2022;
+    width: 55%;
+}
+
+.about button a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.gallery-card {
+    width: calc((100% / 3) - 40px);
+    float: left;
+    margin-left: 40px;
+}
+
+.gallery-card1 {
+    margin-left: 0;
+}
+
+.gallery {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+h4 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding-top: 0;
+    margin-top: 20px;
+}
+
+.gallery-icon,
+.photo-icon,
+.about-icon,
+.contact-icon {
+    width: calc(25% - 40px);
+    margin: 20px;
+    float: left;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.nav-icons {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.navigation i {
+    font-size: 40px;
+    padding-bottom: 0;
+}
+
+.image-container,
+.content-container {
+    float: left;
+}
+
+.image-container {
+    width: 25%;
+    padding-top: 15px;
+}
+
+.top {
+    margin-bottom: 50px;
+}
+
+.content-container {
+    width: 75%;
+    padding-left: 40px;
+}
+
+.content-container p {
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+.behind-button {
+    margin-bottom: 40px;
+}
+
+.mid-left {
+    width: 50%;
+    float: left;
+    background: #F0F5FF;
+}
+
+.mid-right {
+    width: 50%;
+    float: right
+}
+
+.bottom-left {
+    width: 50%;
+    float: left;
+}
+
+.bottom-right {
+    width: 50%;
+    float: right;
+    background: #F0F5FF;
+}
+
+.about-button {
+    text-align: center;
+}
+
+i {
+    color: white;
+}
+
+.blog {
+    padding-top: 50px;
+}
+
+.blog p {
+    padding-bottom: 10px;
+}
+
+.mid-left,
+.bottom-right {
+    width: 50%;
+    background: #F0F5FF;
+    float: left;
+    min-height: 100%;
+}
+
+.mid-right,
+.bottom-left {
+    width: 50%;
+}
+
+.mid-right
+.bottom-right {
+    float: left;
+}
+
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding-top: 12%;
+    margin-bottom: 25px;
+}
+
+.mid-left {
+    padding-right: 10%;
+}
+
+.bottom-right {
+    padding-left: 10%;
+}
+
+.nature-button {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.nature-button,
+.candid-button {
+    padding-bottom: 11.5%;
+    clear: both;
+}
+
+
+.blog p,
+.nature-content p,
+.candid-content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #1F2022;
+}
+
+.nature-content {
+    width: 55%;
+    float: right;
+    text-align: right;
+}
+
+.candid-content {
+    width: 55%;
+    float: left;
+    text-align: left;
+}
+
+.contact {
+    background: #232323;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact p,
+.contact h6 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+
+}
+
+.contact h6 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.contact p {
+    font-size: 18px;
+    padding-bottom: 7px;
+}
+
+.contact-info {
+    float: left;
+    width: 25%;
+}
+
+.pages {
+    width: 25%;
+    float: right;
+}
+
+.subscribe-mobile {
+    display: none;
+}
+
+.subscribe-desktop{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.subscribe button a {
+    font-size: 18px;
+}
+
+.subscribe button {
+    padding: 1.8% 5% 2.5%;
+}
+
+.subscribe input {
+    padding: 15px 200px 15px 30px;
+    border: none;
+    font-size: 18px;
+    color: black;
+    display: inline;
+}
+
+.subscribe p {
+    padding-bottom: 10px;
+    padding-top: 3px;
+}
+
+
+.pages ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.pages ul li {
+    text-align: right;
+    padding: 3px 0;
+}
+
+.pages ul li a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pages h6 {
+    text-align: right;
+}
+
+footer {
+    background: black;
+    clear: both;
+    margin: 0;
+}
+
+footer p {
+    color: #D8D8D8;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 1370px) {
+
+    .mid-left,
+    .bottom-right {
+        padding-top: 0.5%;
+    }
+
+    .nature-button,
+    .candid-button {
+        padding-bottom: 3%;
+    }
+}
+
+@media (max-width: 1240px) {
+    
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    .mid-left,
+    .bottom-right {
+        padding-top: 0.02%;
+    }
+
+    .nature-button,
+    .candid-button {
+        padding-bottom: 5%;
+    }
+
+    .subscribe button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1015px) {
+
+    .wrapper {
+        max-width: 940px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .contact h6, 
+    .contact p,
+    .pages ul li {
+        text-align: center;
+    }
+
+    .pages ul {
+        padding: 0;
+    }
+
+    .subscribe input {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        padding-right: 30px;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    .wrapper {
+        max-width: 768px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+      .image-container,
+    .content-container {
+        width: 100%;
+    }
+
+    .image-container {
+        padding: 10px 100px 40px;
+    }
+
+}
+ /* Landscape phonte to portrait tablet */
+@media (max-width: 768px) {
+
+    .wrapper {
+        max-width: 600px;
+    }
+
+     .home .icons {
+        visibility: hidden;
+    }
+
+    .gallery {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .gallery-card {
+        width: calc(100% / 3);
+        margin-left: 0;
+    }
+
+    .mid-left,
+    .mid-right {
+        float: none;
+        width: 100%;
+    }
+
+    .bottom-left,
+    .bottom-right {
+        float: none;
+        width: 100%;
+    }
+
+    .nature-content,
+    .candid-content,
+    .nature-button,
+    .candid-button {
+        text-align: center;
+    }
+
+    .nature-content,
+    .candid-content {
+        width: 100%;
+    }
+
+    .bottom-right,
+    .mid-left {
+        padding: 0;
+    }
+
+    .subscribe input {
+        padding-right: 30px;
+        padding-left: 80px;
+    }
+
+    .subscribe button {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 3px;
+    }
+
+    .contact-info {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .home nav {
+        visibility: hidden;
+    }
+    
+    .fa-bars {
+        visibility: visible;
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 100px;
+    }
+
+    .icons ul {
+        margin-top: 0;
+    }
+
+    .about {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .about p {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .about-button {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .gallery {
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .gallery-card {
+        margin: 0;
+        width: 50%;
+    }
+
+    .gallery-card3 {
+        display: none;
+    }
+
+    .navigation {
+        margin-top: 0;
+        background: #232323;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    .gallery-icon,
+    .photo-icon,
+    .about-icon,
+    .contact-icon {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .blog {
+        padding-top: 10px;
+    }
+
+    .image-container {
+        padding: 50px 40px 20px;
+    }
+
+    .content-container {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .content-container p {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .behind-button {
+        padding-top: 10px;
+    }
+
+    h5 {
+        margin-top: 0px;
+    }
+
+    .contact {
+        padding: 40px 0;
+    }
+
+    .subscribe-desktop {
+        display: none;
+    }
+
+    .subscribe-mobile {
+        display: inline-block;
+    }
+
+    .subscribe {
+        float: none;
+        width: 100%;
+    }
+
+    .subscribe-mobile button {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-left: 35px;
+    }
+    
+    .subscribe-mobile input {
+        padding-left: 135px;
+        padding-right: 80px;
+        margin-left: 35px;
+    }
+
+    .pages,
+    .contact-info {
+        padding: 20px 0 0;
+    }
+
+    .contact-info {
+        float: left;
+        width: 50%;
+    }
+
+    .pages {
+        float: right;
+        width: 50%;
+    }
+
+
+
+
+
+    
+
+
+    
+
+
+}
+
